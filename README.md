@@ -2,8 +2,6 @@
 
 This repository contains the end-to-end empirical investigation into predicting food delivery times from tabular order, environmental, and courier attributes (`Food_Delivery_Times.csv`).
 
-> 🎓 **Oral Defense / Viva Study Guide:** For an exam-ready, phase-by-phase walkthrough with anticipated professor questions and exact numbers to quote, see [STUDY_GUIDE_VIVA.md](STUDY_GUIDE_VIVA.md).
-
 ---
 
 ## Executive Summary of Findings
