@@ -1,0 +1,14 @@
+# Private viva notes
+STUDY_GUIDE_VIVA.md
+
+
+# Python junk
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
