@@ -1,0 +1,246 @@
+{
+    "test_set_overall": {
+        "N": 200,
+        "MAE": 6.0634,
+        "RMSE": 8.9522,
+        "R2": 0.8212,
+        "Mean_Residual": -0.5411,
+        "Std_Residual": 8.9582
+    },
+    "oof_train_overall": {
+        "N": 800,
+        "MAE": 6.8075,
+        "RMSE": 11.0785,
+        "R2": 0.7524,
+        "Mean_Residual": 0.0407,
+        "Std_Residual": 11.0853
+    },
+    "test_distance_tiers": [
+        {
+            "Group": "Short (<7 km)",
+            "Count": 68,
+            "MAE": 4.081,
+            "RMSE": 9.281,
+            "Mean_Residual": 0.516,
+            "Std_Residual": 9.336
+        },
+        {
+            "Group": "Medium (7-14 km)",
+            "Count": 73,
+            "MAE": 5.712,
+            "RMSE": 6.866,
+            "Mean_Residual": -2.048,
+            "Std_Residual": 6.599
+        },
+        {
+            "Group": "Long (>14 km)",
+            "Count": 59,
+            "MAE": 8.783,
+            "RMSE": 10.68,
+            "Mean_Residual": 0.105,
+            "Std_Residual": 10.771
+        }
+    ],
+    "oof_distance_tiers": [
+        {
+            "Group": "Short (<7 km)",
+            "Count": 278,
+            "MAE": 4.154,
+            "RMSE": 9.043,
+            "Mean_Residual": -0.216,
+            "Std_Residual": 9.057
+        },
+        {
+            "Group": "Medium (7-14 km)",
+            "Count": 284,
+            "MAE": 6.281,
+            "RMSE": 9.846,
+            "Mean_Residual": 0.491,
+            "Std_Residual": 9.851
+        },
+        {
+            "Group": "Long (>14 km)",
+            "Count": 238,
+            "MAE": 10.535,
+            "RMSE": 14.19,
+            "Mean_Residual": -0.198,
+            "Std_Residual": 14.218
+        }
+    ],
+    "test_traffic_levels": [
+        {
+            "Group": "Low",
+            "Count": 72,
+            "MAE": 5.937,
+            "RMSE": 8.03,
+            "Mean_Residual": -2.203,
+            "Std_Residual": 7.776
+        },
+        {
+            "Group": "Medium",
+            "Count": 79,
+            "MAE": 5.014,
+            "RMSE": 6.641,
+            "Mean_Residual": -1.378,
+            "Std_Residual": 6.538
+        },
+        {
+            "Group": "High",
+            "Count": 38,
+            "MAE": 8.389,
+            "RMSE": 13.837,
+            "Mean_Residual": 2.605,
+            "Std_Residual": 13.772
+        }
+    ],
+    "oof_traffic_levels": [
+        {
+            "Group": "Low",
+            "Count": 311,
+            "MAE": 6.908,
+            "RMSE": 11.025,
+            "Mean_Residual": -0.271,
+            "Std_Residual": 11.04
+        },
+        {
+            "Group": "Medium",
+            "Count": 311,
+            "MAE": 6.532,
+            "RMSE": 10.749,
+            "Mean_Residual": -0.017,
+            "Std_Residual": 10.766
+        },
+        {
+            "Group": "High",
+            "Count": 159,
+            "MAE": 6.664,
+            "RMSE": 10.951,
+            "Mean_Residual": 0.15,
+            "Std_Residual": 10.984
+        }
+    ],
+    "extreme_test_underpredictions": [
+        {
+            "Distance_km": 2.99,
+            "Weather": "Foggy",
+            "Traffic_Level": "High",
+            "Time_of_Day": "Afternoon",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 9,
+            "Courier_Experience_yrs": 5.0,
+            "Actual_Delivery_Time": 90,
+            "Predicted_Delivery_Time": 37.294281972411866,
+            "Residual": 52.705718027588134
+        },
+        {
+            "Distance_km": 5.93,
+            "Weather": "Foggy",
+            "Traffic_Level": "High",
+            "Time_of_Day": NaN,
+            "Vehicle_Type": "Scooter",
+            "Preparation_Time_min": 27,
+            "Courier_Experience_yrs": 1.0,
+            "Actual_Delivery_Time": 106,
+            "Predicted_Delivery_Time": 65.30576352583587,
+            "Residual": 40.69423647416413
+        },
+        {
+            "Distance_km": 17.81,
+            "Weather": "Windy",
+            "Traffic_Level": "High",
+            "Time_of_Day": "Evening",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 21,
+            "Courier_Experience_yrs": 4.0,
+            "Actual_Delivery_Time": 122,
+            "Predicted_Delivery_Time": 91.06142950682207,
+            "Residual": 30.938570493177934
+        },
+        {
+            "Distance_km": 4.43,
+            "Weather": "Foggy",
+            "Traffic_Level": "Low",
+            "Time_of_Day": "Morning",
+            "Vehicle_Type": "Scooter",
+            "Preparation_Time_min": 10,
+            "Courier_Experience_yrs": 1.0,
+            "Actual_Delivery_Time": 63,
+            "Predicted_Delivery_Time": 33.59181561831066,
+            "Residual": 29.40818438168934
+        },
+        {
+            "Distance_km": 16.38,
+            "Weather": "Rainy",
+            "Traffic_Level": "Medium",
+            "Time_of_Day": "Night",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 7,
+            "Courier_Experience_yrs": NaN,
+            "Actual_Delivery_Time": 90,
+            "Predicted_Delivery_Time": 67.61403005937429,
+            "Residual": 22.385969940625714
+        }
+    ],
+    "extreme_test_overpredictions": [
+        {
+            "Distance_km": 17.99,
+            "Weather": "Snowy",
+            "Traffic_Level": "Low",
+            "Time_of_Day": "Afternoon",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 15,
+            "Courier_Experience_yrs": 3.0,
+            "Actual_Delivery_Time": 63,
+            "Predicted_Delivery_Time": 82.4529493289443,
+            "Residual": -19.4529493289443
+        },
+        {
+            "Distance_km": 19.5,
+            "Weather": "Clear",
+            "Traffic_Level": "High",
+            "Time_of_Day": "Morning",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 18,
+            "Courier_Experience_yrs": 2.0,
+            "Actual_Delivery_Time": 73,
+            "Predicted_Delivery_Time": 91.79619436205988,
+            "Residual": -18.79619436205988
+        },
+        {
+            "Distance_km": 19.03,
+            "Weather": "Clear",
+            "Traffic_Level": "Low",
+            "Time_of_Day": "Afternoon",
+            "Vehicle_Type": "Car",
+            "Preparation_Time_min": 26,
+            "Courier_Experience_yrs": 5.0,
+            "Actual_Delivery_Time": 68,
+            "Predicted_Delivery_Time": 86.22149239800366,
+            "Residual": -18.22149239800366
+        },
+        {
+            "Distance_km": 18.6,
+            "Weather": "Rainy",
+            "Traffic_Level": "Medium",
+            "Time_of_Day": "Morning",
+            "Vehicle_Type": "Car",
+            "Preparation_Time_min": 28,
+            "Courier_Experience_yrs": 9.0,
+            "Actual_Delivery_Time": 77,
+            "Predicted_Delivery_Time": 93.67957060308373,
+            "Residual": -16.679570603083732
+        },
+        {
+            "Distance_km": 15.23,
+            "Weather": "Snowy",
+            "Traffic_Level": "High",
+            "Time_of_Day": "Morning",
+            "Vehicle_Type": "Bike",
+            "Preparation_Time_min": 5,
+            "Courier_Experience_yrs": 0.0,
+            "Actual_Delivery_Time": 62,
+            "Predicted_Delivery_Time": 76.97760430559083,
+            "Residual": -14.97760430559083
+        }
+    ]
+}

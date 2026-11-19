@@ -1,0 +1,189 @@
+{
+    "n_splits": 5,
+    "random_state": 42,
+    "train_rows": 800,
+    "test_rows": 200,
+    "rf_n_estimators_fixed": 100,
+    "search_spaces": {
+        "Decision Tree": {
+            "max_depth": [
+                3,
+                5,
+                8,
+                null
+            ],
+            "min_samples_leaf": [
+                1,
+                5,
+                10,
+                20
+            ]
+        },
+        "Random Forest": {
+            "max_depth": [
+                5,
+                8,
+                12,
+                null
+            ],
+            "min_samples_leaf": [
+                1,
+                5,
+                10
+            ]
+        },
+        "XGBoost": {
+            "max_depth": [
+                3,
+                5,
+                7
+            ],
+            "learning_rate": [
+                0.05,
+                0.1,
+                0.2
+            ],
+            "n_estimators": [
+                50,
+                100,
+                200
+            ]
+        }
+    },
+    "n_configurations": {
+        "Decision Tree": 16,
+        "Random Forest": 12,
+        "XGBoost": 27
+    },
+    "best_params": {
+        "Decision Tree": {
+            "max_depth": 5,
+            "min_samples_leaf": 5
+        },
+        "Random Forest": {
+            "max_depth": 12,
+            "min_samples_leaf": 5
+        },
+        "XGBoost": {
+            "learning_rate": 0.05,
+            "max_depth": 3,
+            "n_estimators": 100
+        }
+    },
+    "comparison": [
+        {
+            "Model": "Decision Tree",
+            "Config": "original",
+            "Params": "max_depth=None, min_samples_leaf=1",
+            "Mean_Validation_MAE": 10.9863,
+            "Std_Validation_MAE": 0.8759,
+            "Mean_Train_MAE": 0.0,
+            "Generalization_Gap": 10.9863,
+            "Holdout_Test_MAE": 11.29
+        },
+        {
+            "Model": "Decision Tree",
+            "Config": "tuned",
+            "Params": "max_depth=5, min_samples_leaf=5",
+            "Mean_Validation_MAE": 9.1169,
+            "Std_Validation_MAE": 0.8524,
+            "Mean_Train_MAE": 7.5753,
+            "Generalization_Gap": 1.5415,
+            "Holdout_Test_MAE": 8.837
+        },
+        {
+            "Model": "Random Forest",
+            "Config": "original",
+            "Params": "max_depth=None, min_samples_leaf=1, n_estimators=100",
+            "Mean_Validation_MAE": 7.9085,
+            "Std_Validation_MAE": 0.6463,
+            "Mean_Train_MAE": 3.0611,
+            "Generalization_Gap": 4.8474,
+            "Holdout_Test_MAE": 6.8831
+        },
+        {
+            "Model": "Random Forest",
+            "Config": "tuned",
+            "Params": "max_depth=12, min_samples_leaf=5, n_estimators=100",
+            "Mean_Validation_MAE": 7.7708,
+            "Std_Validation_MAE": 0.6011,
+            "Mean_Train_MAE": 5.6629,
+            "Generalization_Gap": 2.1079,
+            "Holdout_Test_MAE": 6.754
+        },
+        {
+            "Model": "XGBoost",
+            "Config": "original",
+            "Params": "learning_rate=0.1, max_depth=5, n_estimators=100",
+            "Mean_Validation_MAE": 7.8687,
+            "Std_Validation_MAE": 0.6752,
+            "Mean_Train_MAE": 2.8107,
+            "Generalization_Gap": 5.058,
+            "Holdout_Test_MAE": 7.0328
+        },
+        {
+            "Model": "XGBoost",
+            "Config": "tuned",
+            "Params": "learning_rate=0.05, max_depth=3, n_estimators=100",
+            "Mean_Validation_MAE": 7.391,
+            "Std_Validation_MAE": 0.6199,
+            "Mean_Train_MAE": 6.0888,
+            "Generalization_Gap": 1.3022,
+            "Holdout_Test_MAE": 6.6662
+        }
+    ],
+    "linear_regression_reference": {
+        "Model": "Linear Regression",
+        "Config": "reference (untuned)",
+        "Params": "sklearn defaults",
+        "Mean_Validation_MAE": 6.8075,
+        "Std_Validation_MAE": 0.4526,
+        "Mean_Train_MAE": 6.6437,
+        "Generalization_Gap": 0.1638,
+        "Holdout_Test_MAE": 6.0634
+    },
+    "fold_mae": {
+        "Decision Tree | original": [
+            11.4812,
+            11.5,
+            11.7937,
+            10.4375,
+            9.7188
+        ],
+        "Decision Tree | tuned": [
+            9.4454,
+            8.4132,
+            10.377,
+            9.0768,
+            8.2719
+        ],
+        "Random Forest | original": [
+            7.4231,
+            7.7222,
+            8.4769,
+            8.6924,
+            7.2281
+        ],
+        "Random Forest | tuned": [
+            7.3573,
+            7.3477,
+            8.5788,
+            8.2552,
+            7.3151
+        ],
+        "XGBoost | original": [
+            7.2218,
+            7.3424,
+            8.5846,
+            8.6027,
+            7.5918
+        ],
+        "XGBoost | tuned": [
+            6.99,
+            6.9224,
+            8.0004,
+            8.1342,
+            6.9082
+        ]
+    }
+}

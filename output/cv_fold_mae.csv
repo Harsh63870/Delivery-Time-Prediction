@@ -1,0 +1,26 @@
+Model,Fold,Validation_MAE,Train_MAE
+Dummy Regressor,1,17.1975,18.098
+Dummy Regressor,2,17.8419,17.9274
+Dummy Regressor,3,18.0743,17.8053
+Dummy Regressor,4,18.1295,17.8357
+Dummy Regressor,5,18.3571,17.7552
+Linear Regression,1,6.4011,6.74
+Linear Regression,2,6.4735,6.7407
+Linear Regression,3,7.1306,6.4775
+Linear Regression,4,7.4353,6.4762
+Linear Regression,5,6.5972,6.7842
+Decision Tree,1,11.4812,0.0
+Decision Tree,2,11.5,0.0
+Decision Tree,3,11.7937,0.0
+Decision Tree,4,10.4375,0.0
+Decision Tree,5,9.7188,0.0
+Random Forest,1,7.4231,3.0711
+Random Forest,2,7.7222,3.1858
+Random Forest,3,8.4769,2.9039
+Random Forest,4,8.6924,2.9706
+Random Forest,5,7.2281,3.1741
+XGBoost,1,7.2218,2.8596
+XGBoost,2,7.3424,2.9227
+XGBoost,3,8.5846,2.7209
+XGBoost,4,8.6027,2.6843
+XGBoost,5,7.5918,2.866

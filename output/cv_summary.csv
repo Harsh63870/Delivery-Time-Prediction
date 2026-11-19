@@ -1,0 +1,6 @@
+Model,Mean_Validation_MAE,Std_Validation_MAE,Min_Validation_MAE,Max_Validation_MAE,Mean_Train_MAE,Holdout_Test_MAE
+Linear Regression,6.8075,0.4526,6.4011,7.4353,6.6437,6.0634
+XGBoost,7.8687,0.6752,7.2218,8.6027,2.8107,7.0328
+Random Forest,7.9085,0.6463,7.2281,8.6924,3.0611,6.8831
+Decision Tree,10.9863,0.8759,9.7188,11.7937,0.0,11.29
+Dummy Regressor,17.92,0.4435,17.1975,18.3571,17.8843,17.5014

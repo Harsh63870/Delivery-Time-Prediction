@@ -1,0 +1,146 @@
+{
+    "shape": [
+        1000,
+        9
+    ],
+    "columns": [
+        "Order_ID",
+        "Distance_km",
+        "Weather",
+        "Traffic_Level",
+        "Time_of_Day",
+        "Vehicle_Type",
+        "Preparation_Time_min",
+        "Courier_Experience_yrs",
+        "Delivery_Time_min"
+    ],
+    "dtypes": {
+        "Order_ID": "int64",
+        "Distance_km": "float64",
+        "Weather": "str",
+        "Traffic_Level": "str",
+        "Time_of_Day": "str",
+        "Vehicle_Type": "str",
+        "Preparation_Time_min": "int64",
+        "Courier_Experience_yrs": "float64",
+        "Delivery_Time_min": "int64"
+    },
+    "missing_values": {
+        "Missing_Count": {
+            "Order_ID": 0,
+            "Distance_km": 0,
+            "Weather": 30,
+            "Traffic_Level": 30,
+            "Time_of_Day": 30,
+            "Vehicle_Type": 0,
+            "Preparation_Time_min": 0,
+            "Courier_Experience_yrs": 30,
+            "Delivery_Time_min": 0
+        },
+        "Missing_Percentage": {
+            "Order_ID": 0.0,
+            "Distance_km": 0.0,
+            "Weather": 3.0,
+            "Traffic_Level": 3.0,
+            "Time_of_Day": 3.0,
+            "Vehicle_Type": 0.0,
+            "Preparation_Time_min": 0.0,
+            "Courier_Experience_yrs": 3.0,
+            "Delivery_Time_min": 0.0
+        }
+    },
+    "duplicates": 0,
+    "num_cols": [
+        "Distance_km",
+        "Preparation_Time_min",
+        "Courier_Experience_yrs"
+    ],
+    "cat_cols": [
+        "Weather",
+        "Traffic_Level",
+        "Time_of_Day",
+        "Vehicle_Type"
+    ],
+    "target_col": "Delivery_Time_min",
+    "outlier_info": {
+        "Distance_km": {
+            "Q1": 5.11,
+            "Q3": 15.02,
+            "IQR": 9.91,
+            "Lower_Bound": -9.76,
+            "Upper_Bound": 29.89,
+            "Outlier_Count": 0,
+            "Outlier_Pct": 0.0,
+            "Skewness": 0.039,
+            "Mean": 10.06,
+            "Median": 10.19,
+            "Std": 5.7
+        },
+        "Preparation_Time_min": {
+            "Q1": 11.0,
+            "Q3": 23.0,
+            "IQR": 12.0,
+            "Lower_Bound": -7.0,
+            "Upper_Bound": 41.0,
+            "Outlier_Count": 0,
+            "Outlier_Pct": 0.0,
+            "Skewness": 0.03,
+            "Mean": 16.98,
+            "Median": 17.0,
+            "Std": 7.2
+        },
+        "Courier_Experience_yrs": {
+            "Q1": 2.0,
+            "Q3": 7.0,
+            "IQR": 5.0,
+            "Lower_Bound": -5.5,
+            "Upper_Bound": 14.5,
+            "Outlier_Count": 0,
+            "Outlier_Pct": 0.0,
+            "Skewness": -0.029,
+            "Mean": 4.58,
+            "Median": 5.0,
+            "Std": 2.91
+        },
+        "Delivery_Time_min": {
+            "Q1": 41.0,
+            "Q3": 71.0,
+            "IQR": 30.0,
+            "Lower_Bound": -4.0,
+            "Upper_Bound": 116.0,
+            "Outlier_Count": 6,
+            "Outlier_Pct": 0.6,
+            "Skewness": 0.507,
+            "Mean": 56.73,
+            "Median": 55.5,
+            "Std": 22.07
+        }
+    },
+    "correlations": {
+        "Distance_km": 0.7809983586157736,
+        "Preparation_Time_min": 0.30734996261566927,
+        "Courier_Experience_yrs": -0.09043292521201647,
+        "Delivery_Time_min": 1.0
+    },
+    "models_results": {
+        "Linear Regression": {
+            "MAE": 6.0634,
+            "MSE": 80.1414,
+            "RMSE": 8.9522,
+            "R2": 0.8212
+        },
+        "Random Forest Regressor": {
+            "MAE": 6.8831,
+            "MSE": 92.5162,
+            "RMSE": 9.6185,
+            "R2": 0.7936
+        },
+        "XGBoost Regressor": {
+            "MAE": 7.0328,
+            "MSE": 93.6328,
+            "RMSE": 9.6764,
+            "R2": 0.7911
+        }
+    },
+    "best_model": "Linear Regression"
+}

@@ -1,0 +1,2 @@
+Model,Config,Params,Mean_Validation_MAE,Std_Validation_MAE,Mean_Train_MAE,Generalization_Gap,Holdout_Test_MAE
+Linear Regression,reference (untuned),sklearn defaults,6.8075,0.4526,6.6437,0.1638,6.0634

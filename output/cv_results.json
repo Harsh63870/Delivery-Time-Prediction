@@ -1,0 +1,94 @@
+{
+    "n_splits": 5,
+    "random_state": 42,
+    "train_rows": 800,
+    "test_rows": 200,
+    "same_folds_for_all_models": true,
+    "cv_splitter": "KFold(n_splits=5, shuffle=True, random_state=42)",
+    "per_fold_validation_mae": {
+        "Dummy Regressor": [
+            17.1974609375,
+            17.841874999999998,
+            18.074335937500003,
+            18.1294921875,
+            18.3570703125
+        ],
+        "Linear Regression": [
+            6.401065404292808,
+            6.4734902877583425,
+            7.130588585097473,
+            7.43529857759102,
+            6.59719077550501
+        ],
+        "Decision Tree": [
+            11.48125,
+            11.5,
+            11.79375,
+            10.4375,
+            9.71875
+        ],
+        "Random Forest": [
+            7.4230625,
+            7.7221874999999995,
+            8.476875,
+            8.6924375,
+            7.228125
+        ],
+        "XGBoost": [
+            7.2217698097229,
+            7.342445373535156,
+            8.584640502929688,
+            8.602694511413574,
+            7.591830253601074
+        ]
+    },
+    "summary": [
+        {
+            "Model": "Linear Regression",
+            "Mean_Validation_MAE": 6.8075,
+            "Std_Validation_MAE": 0.4526,
+            "Min_Validation_MAE": 6.4011,
+            "Max_Validation_MAE": 7.4353,
+            "Mean_Train_MAE": 6.6437,
+            "Holdout_Test_MAE": 6.0634
+        },
+        {
+            "Model": "XGBoost",
+            "Mean_Validation_MAE": 7.8687,
+            "Std_Validation_MAE": 0.6752,
+            "Min_Validation_MAE": 7.2218,
+            "Max_Validation_MAE": 8.6027,
+            "Mean_Train_MAE": 2.8107,
+            "Holdout_Test_MAE": 7.0328
+        },
+        {
+            "Model": "Random Forest",
+            "Mean_Validation_MAE": 7.9085,
+            "Std_Validation_MAE": 0.6463,
+            "Min_Validation_MAE": 7.2281,
+            "Max_Validation_MAE": 8.6924,
+            "Mean_Train_MAE": 3.0611,
+            "Holdout_Test_MAE": 6.8831
+        },
+        {
+            "Model": "Decision Tree",
+            "Mean_Validation_MAE": 10.9863,
+            "Std_Validation_MAE": 0.8759,
+            "Min_Validation_MAE": 9.7188,
+            "Max_Validation_MAE": 11.7937,
+            "Mean_Train_MAE": 0.0,
+            "Holdout_Test_MAE": 11.29
+        },
+        {
+            "Model": "Dummy Regressor",
+            "Mean_Validation_MAE": 17.92,
+            "Std_Validation_MAE": 0.4435,
+            "Min_Validation_MAE": 17.1975,
+            "Max_Validation_MAE": 18.3571,
+            "Mean_Train_MAE": 17.8843,
+            "Holdout_Test_MAE": 17.5014
+        }
+    ],
+    "best_by_mean_cv_mae": "Linear Regression",
+    "lowest_cv_std": "Dummy Regressor"
+}

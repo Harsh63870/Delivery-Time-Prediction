@@ -1,0 +1,4 @@
+Group,Count,MAE,RMSE,Mean_Residual,Std_Residual
+Low,72,5.937,8.03,-2.203,7.776
+Medium,79,5.014,6.641,-1.378,6.538
+High,38,8.389,13.837,2.605,13.772

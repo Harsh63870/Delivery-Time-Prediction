@@ -1,0 +1,185 @@
+{
+    "n_splits": 5,
+    "random_state": 42,
+    "same_folds_as_stability_cv": true,
+    "cv_splitter": "KFold(n_splits=5, shuffle=True, random_state=42)",
+    "original_numeric": [
+        "Distance_km",
+        "Preparation_Time_min",
+        "Courier_Experience_yrs"
+    ],
+    "engineered_numeric_added": [
+        "Distance_x_Traffic",
+        "Prep_plus_Travel_Proxy"
+    ],
+    "traffic_ordinal": {
+        "Low": 1.0,
+        "Medium": 2.0,
+        "High": 3.0
+    },
+    "vehicle_base_min_per_km": {
+        "Bike": 5.0,
+        "Scooter": 4.0,
+        "Car": 3.0
+    },
+    "traffic_speed_multiplier": {
+        "Low": 0.8,
+        "Medium": 1.0,
+        "High": 1.4
+    },
+    "train_feature_describe": {
+        "Distance_km": {
+            "count": 800.0,
+            "mean": 10.101,
+            "std": 5.726,
+            "min": 0.59,
+            "25%": 5.13,
+            "50%": 10.22,
+            "75%": 14.942,
+            "max": 19.99
+        },
+        "Distance_x_Traffic": {
+            "count": 800.0,
+            "mean": 18.028,
+            "std": 13.524,
+            "min": 0.59,
+            "25%": 7.692,
+            "50%": 15.0,
+            "75%": 25.535,
+            "max": 59.97
+        },
+        "Prep_plus_Travel_Proxy": {
+            "count": 800.0,
+            "mean": 60.287,
+            "std": 29.417,
+            "min": 9.44,
+            "25%": 37.944,
+            "50%": 55.652,
+            "75%": 80.46,
+            "max": 156.93
+        }
+    },
+    "per_fold_validation_mae": {
+        "original": {
+            "Dummy Regressor": [
+                17.1974609375,
+                17.841874999999998,
+                18.074335937500003,
+                18.1294921875,
+                18.3570703125
+            ],
+            "Linear Regression": [
+                6.401065404292808,
+                6.4734902877583425,
+                7.130588585097473,
+                7.43529857759102,
+                6.59719077550501
+            ],
+            "Decision Tree": [
+                11.48125,
+                11.5,
+                11.79375,
+                10.4375,
+                9.71875
+            ],
+            "Random Forest": [
+                7.4230625,
+                7.7221874999999995,
+                8.476875,
+                8.6924375,
+                7.228125
+            ],
+            "XGBoost": [
+                7.2217698097229,
+                7.342445373535156,
+                8.584640502929688,
+                8.602694511413574,
+                7.591830253601074
+            ]
+        },
+        "engineered": {
+            "Dummy Regressor": [
+                17.1974609375,
+                17.841874999999998,
+                18.074335937500003,
+                18.1294921875,
+                18.3570703125
+            ],
+            "Linear Regression": [
+                6.416607351154316,
+                6.50285481693934,
+                7.117627664602506,
+                7.4921015946626905,
+                6.569978987808133
+            ],
+            "Decision Tree": [
+                8.73125,
+                9.9625,
+                12.0,
+                11.78125,
+                10.675
+            ],
+            "Random Forest": [
+                7.8427500000000006,
+                6.885875,
+                7.963125,
+                8.8183125,
+                7.281687499999999
+            ],
+            "XGBoost": [
+                7.8310346603393555,
+                7.04266357421875,
+                8.543336868286133,
+                8.99647331237793,
+                7.516998291015625
+            ]
+        }
+    },
+    "comparison": [
+        {
+            "Model": "Dummy Regressor",
+            "Mean_MAE_Original": 17.92,
+            "Std_MAE_Original": 0.4435,
+            "Mean_MAE_Engineered": 17.92,
+            "Std_MAE_Engineered": 0.4435,
+            "Delta_Mean_MAE": 0.0,
+            "Improved": false
+        },
+        {
+            "Model": "Linear Regression",
+            "Mean_MAE_Original": 6.8075,
+            "Std_MAE_Original": 0.4526,
+            "Mean_MAE_Engineered": 6.8198,
+            "Std_MAE_Engineered": 0.4653,
+            "Delta_Mean_MAE": 0.012299999999999756,
+            "Improved": false
+        },
+        {
+            "Model": "Decision Tree",
+            "Mean_MAE_Original": 10.9863,
+            "Std_MAE_Original": 0.8759,
+            "Mean_MAE_Engineered": 10.63,
+            "Std_MAE_Engineered": 1.3468,
+            "Delta_Mean_MAE": -0.3562999999999992,
+            "Improved": true
+        },
+        {
+            "Model": "Random Forest",
+            "Mean_MAE_Original": 7.9085,
+            "Std_MAE_Original": 0.6463,
+            "Mean_MAE_Engineered": 7.7583,
+            "Std_MAE_Engineered": 0.735,
+            "Delta_Mean_MAE": -0.1501999999999999,
+            "Improved": true
+        },
+        {
+            "Model": "XGBoost",
+            "Mean_MAE_Original": 7.8687,
+            "Std_MAE_Original": 0.6752,
+            "Mean_MAE_Engineered": 7.9861,
+            "Std_MAE_Engineered": 0.7851,
+            "Delta_Mean_MAE": 0.11740000000000084,
+            "Improved": false
+        }
+    ]
+}

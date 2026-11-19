@@ -1,0 +1,6 @@
+Model,Mean_MAE_Original,Std_MAE_Original,Mean_MAE_Engineered,Std_MAE_Engineered,Delta_Mean_MAE,Improved
+Dummy Regressor,17.92,0.4435,17.92,0.4435,0.0,False
+Linear Regression,6.8075,0.4526,6.8198,0.4653,0.012299999999999756,False
+Decision Tree,10.9863,0.8759,10.63,1.3468,-0.3562999999999992,True
+Random Forest,7.9085,0.6463,7.7583,0.735,-0.1501999999999999,True
+XGBoost,7.8687,0.6752,7.9861,0.7851,0.11740000000000084,False

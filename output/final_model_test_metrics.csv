@@ -1,0 +1,2 @@
+Model,Train_Samples,Test_Samples,Train_MAE_min,Train_RMSE_min,Train_R2,5Fold_CV_MAE_Mean_min,5Fold_CV_MAE_Std_min,Test_MAE_min,Test_RMSE_min,Test_MSE_min2,Test_R2,Test_MedAE_min,Test_Explained_Variance,Max_Absolute_Error_min,Generalization_Gap_MAE_min,Pct_Within_5min,Pct_Within_10min,Pct_Within_15min,Intercept_Minutes
+Linear Regression (Final Production Pipeline),800,200,6.6506,10.8941,0.7606,6.8075,0.4526,6.0634,8.9522,80.1414,0.8212,4.368,0.8219,52.7057,-0.5872,55.0,82.5,94.0,59.6818

@@ -1,0 +1,22 @@
+{
+    "Model": "Linear Regression (Final Production Pipeline)",
+    "Train_Samples": 800,
+    "Test_Samples": 200,
+    "Train_MAE_min": 6.6506,
+    "Train_RMSE_min": 10.8941,
+    "Train_R2": 0.7606,
+    "5Fold_CV_MAE_Mean_min": 6.8075,
+    "5Fold_CV_MAE_Std_min": 0.4526,
+    "Test_MAE_min": 6.0634,
+    "Test_RMSE_min": 8.9522,
+    "Test_MSE_min2": 80.1414,
+    "Test_R2": 0.8212,
+    "Test_MedAE_min": 4.368,
+    "Test_Explained_Variance": 0.8219,
+    "Max_Absolute_Error_min": 52.7057,
+    "Generalization_Gap_MAE_min": -0.5872,
+    "Pct_Within_5min": 55.0,
+    "Pct_Within_10min": 82.5,
+    "Pct_Within_15min": 94.0,
+    "Intercept_Minutes": 59.6818
+}

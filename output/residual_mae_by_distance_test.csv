@@ -1,0 +1,4 @@
+Group,Count,MAE,RMSE,Mean_Residual,Std_Residual
+Short (<7 km),68,4.081,9.281,0.516,9.336
+Medium (7-14 km),73,5.712,6.866,-2.048,6.599
+Long (>14 km),59,8.783,10.68,0.105,10.771
